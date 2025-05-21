@@ -73,40 +73,40 @@ _todo..._
         <details>
         <summary><b>Via Terminal</b></summary>
 
-        1. Create `qt5ct` config in user skeleton
-
-            ```bash
-            cat << 'EOF' | sudo tee /etc/skel/.config/qt5ct/qt5ct.conf &>/dev/null
-            [Appearance]
-            color_scheme_path=/usr/share/qt5ct/colors/darker.conf
-            custom_palette=true
-            standard_dialogs=default
-            style=Fusion
-            EOF
-            ```
+        > 1. Create `qt5ct` config in user skeleton
+        >
+        >    ```bash
+        >    cat << 'EOF' | sudo tee /etc/skel/.config/qt5ct/qt5ct.conf &>/dev/null
+        >    [Appearance]
+        >    color_scheme_path=/usr/share/qt5ct/colors/darker.conf
+        >    custom_palette=true
+        >    standard_dialogs=default
+        >    style=Fusion
+        >    EOF
+        >    ```
 
         </details>
 
         <details>
         <summary><b>Via GUI</b></summary>
 
-        1. Launch `qt5ct`
-
-            ```bash
-            setsid qt5ct &>/dev/null
-            ```
-
-        2. Set _QT_ color-scheme to `darker`
-
-            _`Appearance` → `Palette` → `Custom` → `Color scheme` → `darker`_
-
-        3. Click `OK`
-
-        5. Copy `qt5ct` config to user skeleton
-
-            ```bash
-            sudo cp /home/user/.config/qt5ct/qt5ct.conf /etc/skel/.config/qt5ct/
-            ```
+        > 1. Launch `qt5ct`
+        > 
+        >     ```bash
+        >     setsid qt5ct &>/dev/null
+        >     ```
+        > 
+        > 2. Set _QT_ color-scheme to `darker`
+        > 
+        >     _`Appearance` → `Palette` → `Custom` → `Color scheme` → `darker`_
+        > 
+        > 3. Click `OK`
+        > 
+        > 5. Copy `qt5ct` config to user skeleton
+        > 
+        >     ```bash
+        >     sudo cp /home/user/.config/qt5ct/qt5ct.conf /etc/skel/.config/qt5ct/
+        >     ```
 
         </details>
 
