@@ -197,7 +197,7 @@ _todo..._
     >
     > </details>
 
-    - **Clean Shutdown** _(recommended for Disposable Template)
+    - **Clean Shutdown** _(recommended for Disposable Template)_
 
         <ul>
         <li>
