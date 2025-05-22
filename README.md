@@ -179,20 +179,61 @@ _todo..._
     <details>
     <summary><b>Step Details</b></summary>
 
-    > VMs in Qubes OS share a `root.img` with their _TemplateVM_, which is where the _bash history_ of user `root` is stored. It is thus recommended that you perform a clean shutdown to prevent contaminating the `root` command history of VMs based on this template.
+    > It is good practice to erase the _bash history (command history)_ of _TemplateVMs_ and _AppVMs_ configured as _disposable templates_. How this is performed depends on the _shell_ type.
 
     </details>
 
-    - **Clean Shutdown** _(recommended)_
+    > <picture>
+    >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
+    >   <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
+    > </picture><br>
+    >
+    > It is good practice to erase the _bash history (command history)_ of _TemplateVMs_ and _AppVMs_ configured as _disposable templates_. How this is performed depends on the _shell_ type.
+    >
+    > <details>
+    > <summary><b>What is my shell type?</b></summary>
+    >
+    > > Execute `echo $0` or `echo $SHELL` in your terminal to discover the current shell type.
+    >
+    > </details>
+
+    - **Clean Shutdown** _(recommended for Disposable Template)
+
+        <ul>
+        <li>
+        <details>
+        <summary><b>Zsh Shell <em>(e.g., Whonix Workstation)</em></b></summary>
+
+        > <picture>
+        >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/note.svg">
+        >   <img alt="Note" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/note.svg">
+        > </picture><br>
+        >
+        > This command appends your `.zshrc` file with a command which deletes the _command history file_ `$HISTFILE`. You only need to execute the below command once per _VM_; subsequent sessions can safely shutdown by simply executing `sudo poweroff`.
 
         ```bash
-        cat /dev/null > ~/.bash_history && history -c && poweroff
+        echo 'rm -f "$HISTFILE"' >> ~/.zshrc && sudo poweroff
         ```
+
+        </details>
+        </li>
+        <li>
+        <details>
+        <summary><b>Bash Shell <em>(e.g., Debian)</em></b></summary>
+
+        ```bash
+        cat /dev/null > ~/.bash_history && history -c && sudo poweroff
+        ```
+
+        </details>
+        </li>
+        </ul>
+        
     
     - **Dirty Shutdown**
     
         ```bash
-        poweroff
+        sudo poweroff
         ```
 
 
