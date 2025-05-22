@@ -10,13 +10,13 @@ This repository is dedicated to the configuration of a system-wide _dark-theme_ 
 
 </details>
 
-
+<br>
 
 ## Dom0 Configuration
 
 _todo..._
 
-
+<br>
 
 ## Debian 12 Configuration
 
@@ -39,7 +39,7 @@ _todo..._
     2. Create dark-theme _CSS_ config `gtk.css`
 
         ```bash
-        echo '@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");' | sudo tee -a /etc/skel/.config/gtk-3.0/gtk.css &>/dev/null
+        echo '@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");' | sudo tee /etc/skel/.config/gtk-3.0/gtk.css &>/dev/null
         ```
 
 2. [**user**@**TemplateVM**]() Configure dark-theme for _QT_ applications <a name="deb-tvm-2"></a>
@@ -146,7 +146,7 @@ _todo..._
     1. Point _QT Platform Theme_ to `qt5ct` in the `~/.profile` script
 
         ```bash
-        cat << 'EOF' | tee -a ~/.profile &>/dev/null
+        cat << 'EOF' >> ~/.profile &>/dev/null
         QT_QPA_PLATFORMTHEME=qt5ct
         QT_SCALE_FACTOR=1
         EOF
@@ -244,7 +244,7 @@ _todo..._
         sudo poweroff
         ```
 
-
+<br>
 
 ## Fedora X Configuration
 
