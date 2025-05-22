@@ -26,7 +26,7 @@ _todo..._
 > Applying this configuration in a _TemplateVM_ will in-turn apply the configuration to _new_ _AppVMs_ based on the template. However, existing _AppVMs_ based on the template will **not** be affected; see [AppVM Config](#appvm-config) below.
 
 > [!NOTE]
-> The commands below are written for execution by user `user`. If, however, you are in a _minimal_ template with an unprivileged `user` account, remove all mentions of `sudo` in each command and execute as user `root`.
+> The commands below are written for execution by user `user`. If, however, you are in a _minimal_ template with an unprivileged `user` account _(e.g., debian-12-minimal)_, remove all mentions of `sudo` in each command and execute as user `root`.
 
 1. [**user**@**TemplateVM**]() Configure dark-theme for _GTK_ applications <a name="deb-tvm-1"></a>
 
