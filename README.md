@@ -47,7 +47,7 @@ _todo..._
     1. Install `qt5ct` package <a name="deb-tvm-2-1"></a>
 
         ```bash
-        sudo apt install qt5ct
+        sudo apt install -y --no-install-recommends qt5ct
         ```
 
     2. Create `environment.d` drop-in directory <a name="deb-tvm-2-2"></a>
@@ -120,7 +120,7 @@ _todo..._
 ### AppVM Config
 
 > [!IMPORTANT]
-> You must execute `sudo apt install qt5ct` in the _TemplateVM_ of your _AppVM_ before starting the _AppVM_. This is a required package for _QT_-based applications _(KeePassXC, Telegram, VLC)_.
+> You must execute `sudo apt install -y --no-install-recommends qt5ct` in the _TemplateVM_ of your _AppVM_ before starting the _AppVM_. This is a required package for _QT_-based applications _(KeePassXC, Telegram, VLC)_.
 >
 > :exclamation: Shutdown the _TemplateVM_ after installing _qt5ct_: `sudo poweroff`
 
