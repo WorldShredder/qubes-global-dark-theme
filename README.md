@@ -59,7 +59,10 @@ _todo..._
     3. Create environment config which points _QT Platform Theme_ to `qt5ct` <a name="deb-tvm-2-3"></a>
 
         ```bash
-        echo 'QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment.d/100qt5ct-dark-theme.conf &>/dev/null
+        cat << 'EOF' | sudo tee -a /etc/environment.d/100qt5ct-dark-theme.conf &>/dev/null
+        QT_QPA_PLATFORMTHEME=qt5ct
+        QT_SCALE_FACTOR=1
+        EOF
         ```
 
     4. Create `qt5ct` config directory in user skeleton
@@ -129,7 +132,10 @@ _todo..._
     1. Point _QT Platform Theme_ to `qt5ct` in the `~/.profile` script
 
         ```bash
-        echo 'QT_QPA_PLATFORMTHEME=qt5ct' >> ~/.profile
+        cat << 'EOF' | tee -a ~/.profile &>/dev/null
+        QT_QPA_PLATFORMTHEME=qt5ct
+        QT_SCALE_FACTOR=1
+        EOF
         ```
 
     2. Create `qt5ct` config directory in `.config`
