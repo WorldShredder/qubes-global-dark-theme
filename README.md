@@ -113,7 +113,7 @@ _todo..._
 
         </details>
 
-3. [**user**@**TemplateVM**]() Shutdown the _TemplateVM_ to apply changes
+3. [**user**@**TemplateVM**]() Shutdown the _TemplateVM_ to apply changes <a name="deb-tvm-3"></a>
 
     ```bash
     sudo poweroff
@@ -127,7 +127,7 @@ _todo..._
 >
 > :exclamation: Shutdown the _TemplateVM_ after installing _qt5ct_: `sudo poweroff`
 
-1. [**user**@**AppVM**]() Configure dark-theme for _GTK_ applications <a name="deb-tvm-1"></a>
+1. [**user**@**AppVM**]() Configure dark-theme for _GTK_ applications <a name="deb-avm-1"></a>
 
     1. Create `gtk-3.0` directory in user home
 
@@ -194,7 +194,7 @@ _todo..._
 
         </details>
 
-3. [**user**@**AppVM**]() Shutdown the _AppVM_ to apply changes
+3. [**user**@**AppVM**]() Shutdown the _AppVM_ to apply changes <a name="deb-avm-3"></a>
 
     > <picture>
     >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
@@ -212,8 +212,6 @@ _todo..._
 
     - **Clean Shutdown** _(recommended for Disposable Template)_
 
-        <ul>
-        <li>
         <details>
         <summary><b>Zsh Shell <em>(e.g., Whonix Workstation)</em></b></summary>
 
@@ -229,8 +227,7 @@ _todo..._
         ```
 
         </details>
-        </li>
-        <li>
+
         <details>
         <summary><b>Bash Shell <em>(e.g., Debian)</em></b></summary>
 
@@ -239,8 +236,6 @@ _todo..._
         ```
 
         </details>
-        </li>
-        </ul>
         
     
     - **Dirty Shutdown**
