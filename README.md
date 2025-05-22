@@ -176,13 +176,6 @@ _todo..._
 
 3. [**user**@**AppVM**]() Shutdown the _AppVM_ to apply changes
 
-    <details>
-    <summary><b>Step Details</b></summary>
-
-    > It is good practice to erase the _bash history (command history)_ of _TemplateVMs_ and _AppVMs_ configured as _disposable templates_. How this is performed depends on the _shell_ type.
-
-    </details>
-
     > <picture>
     >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
     >   <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
