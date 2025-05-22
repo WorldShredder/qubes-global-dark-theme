@@ -135,7 +135,7 @@ _todo..._
     2. Create `qt5ct` config directory in `.config`
 
         ```bash
-        mkdir ~/.config/qt5ct
+        mkdir -p ~/.config/qt5ct
         ```
 
     3. Apply dark-theme to `qt5ct` configuration
@@ -176,9 +176,24 @@ _todo..._
 
 3. [**user**@**AppVM**]() Shutdown the _AppVM_ to apply changes
 
-    ```bash
-    sudo poweroff
-    ```
+    <details>
+    <summary><b>Step Details</b></summary>
+
+    > VMs in Qubes OS share a `root.img` with their _TemplateVM_, which is where the _bash history_ of user `root` is stored. It is thus recommended that you perform a clean shutdown to prevent contaminating the `root` command history of VMs based on this template.
+
+    </details>
+
+    - **Clean Shutdown** _(recommended)_
+
+        ```bash
+        cat /dev/null > ~/.bash_history && history -c && poweroff
+        ```
+    
+    - **Dirty Shutdown**
+    
+        ```bash
+        poweroff
+        ```
 
 
 
