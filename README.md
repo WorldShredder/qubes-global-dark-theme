@@ -53,7 +53,7 @@ _todo..._
     2. Create `environment.d` drop-in directory <a name="deb-tvm-2-2"></a>
 
         ```bash
-        sudo mkdir /etc/environment.d
+        sudo mkdir -p /etc/environment.d
         ```
 
     3. Create environment config which points _QT Platform Theme_ to `qt5ct` <a name="deb-tvm-2-3"></a>
