@@ -36,7 +36,7 @@ _todo..._
         sudo mkdir -p /etc/skel/.config/gtk-3.0
         ```
 
-    2. Add dark-theme _CSS_ config `gtk-3.0`
+    2. Create dark-theme _CSS_ config `gtk.css`
 
         ```bash
         echo '@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");' | sudo tee -a /etc/skel/.config/gtk-3.0/gtk.css &>/dev/null
@@ -127,7 +127,21 @@ _todo..._
 >
 > :exclamation: Shutdown the _TemplateVM_ after installing _qt5ct_: `sudo poweroff`
 
-1. [**user**@**AppVM**]() Configure dark-theme for _QT_ applications <a name="deb-avm-2"></a>
+1. [**user**@**AppVM**]() Configure dark-theme for _GTK_ applications <a name="deb-tvm-1"></a>
+
+    1. Create `gtk-3.0` directory in user home
+
+        ```bash
+        mkdir -p /home/user/.config/gtk-3.0
+        ```
+
+    2. Create dark-theme _CSS_ config `gtk.css`
+
+        ```bash
+        echo '@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");' > /home/user/.config/gtk-3.0/gtk.css
+        ```
+
+2. [**user**@**AppVM**]() Configure dark-theme for _QT_ applications <a name="deb-avm-2"></a>
 
     1. Point _QT Platform Theme_ to `qt5ct` in the `~/.profile` script
 
