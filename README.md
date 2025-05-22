@@ -6,7 +6,7 @@ This repository is dedicated to the configuration of a system-wide _dark-theme_ 
 <details>
 <summary><b>What is <code>/etc/skel</code></b></summary>
 
-> `/etc/skel` is a directory which acts as a _skeleton_ home directories, e.g., `/home/user`, and is used by `adduser` to generate home directories for new users. That said, modifications to `/etc/skel` do not affect the home directories of existing users.
+> `/etc/skel` is a directory which acts as a _skeleton_ for user home directories, e.g., `/home/user`, and is used by `adduser` to generate home directories for new users. That said, modifications to `/etc/skel` do not affect the home directories of existing users.
 
 </details>
 
@@ -210,7 +210,7 @@ _todo..._
     >
     > </details>
 
-    - **Clean Shutdown** _(recommended for Disposable Template)_
+    - **Clean Shutdown** _(recommended for Disposable Templates)_
 
         <details>
         <summary><b>Zsh Shell <em>(e.g., Whonix Workstation)</em></b></summary>
