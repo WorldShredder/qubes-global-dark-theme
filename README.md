@@ -146,7 +146,7 @@ _todo..._
     1. Point _QT Platform Theme_ to `qt5ct` in the `~/.profile` script
 
         ```bash
-        cat << 'EOF' >> ~/.profile &>/dev/null
+        cat << 'EOF' >> ~/.profile
         QT_QPA_PLATFORMTHEME=qt5ct
         QT_SCALE_FACTOR=1
         EOF
@@ -166,7 +166,7 @@ _todo..._
         > 1. Create `qt5ct` config in user skeleton
         >
         >    ```bash
-        >    cat << 'EOF' > ~/.config/qt5ct/qt5ct.conf &>/dev/null
+        >    cat << 'EOF' > ~/.config/qt5ct/qt5ct.conf
         >    [Appearance]
         >    color_scheme_path=/usr/share/qt5ct/colors/darker.conf
         >    custom_palette=true
